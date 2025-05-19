@@ -2,87 +2,119 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <link rel="stylesheet" href="estilo-formulario-charlas.css">
-    <title>CHARLAS | Robotikschule-Arg</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <link rel="stylesheet" href="estilo-formulario-charlas.css" />
+  <title>CHARLAS | Robotikschule-Arg</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Raleway:wght@700&display=swap"
-        rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Raleway:wght@700&display=swap" rel="stylesheet" />
 </head>
-<script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function () {
-        var charla = document.getElementById("charla").value;
-        var fecha = document.getElementById("fecha").value;
-        var hora = document.getElementById("hora").value;
-        var email = document.getElementById("email").value;
-        if (charla == "0" || fecha == "0" || hora == "0" || email == "") {
-            alert("Verifique los datos del formulario");
-            
-        }
-
-        alert("Asistencia reservada correctamente");
-    });
-</script>
 
 <body>
-    <div class="box">
-        <form class="loginForm">
-            <div class="titulo">
-                <h1>Anotarse a charlas</h1>
-            </div>
-            <div id="charla" class="charla">
-                <h1>Charlas:</h1>
-                <input id="cb1" type="checkbox" name="charlas">
-                <label for="cb1">Historia De La Robotica</label>
-                <input id="cb2" type="checkbox" name="charlas">
-                <label for="cb2">Nuevas Herramientas</label>
-                <input id="cb3" type="checkbox" name="charlas">
-                <label for="cb3">Historia De La Robotica</label>
-                <input id="cb4" type="checkbox" name="charlas">
-                <label for="cb4">Robotica y El Mundo De La Salud</label>
-                <input id="cb5" type="checkbox" name="charlas">
-                <label for="cb5">Robotica y Nuevas Empresas</label>
-                <input id="cb6" type="checkbox" name="charlas">
-                <label for="cb6">Mundo Laboral</label>
-            </div>
-            <div id="fecha" class="fecha">
-                <h1>Fecha:</h1>
-                <input id="rb1" type="radio" name="fecha">
-                <label for="rb1">Lunes</label>
-                <input id="rb2" type="radio" name="fecha">
-                <label for="rb2">Martes</label>
-                <input id="rb3" type="radio" name="fecha">
-                <label for="rb3">Miercoles</label>
-                <input id="rb4" type="radio" name="fecha">
-                <label for="rb4">Jueves</label>
-                <input id="rb5" type="radio" name="fecha">
-                <label for="rb5">Viernes</label>
-            </div>
-            <div id="hora" class="hora">
-                <h1>Hora:</h1>
-                <input id="rb1" type="radio" name="hora">
-                <label for="rb1">9:00 am / 11:00 am</label>
-                <input id="rb2" type="radio" name="hora">
-                <label for="rb2">13:00 pm / 2:00 pm</label>
-                <input id="rb3" type="radio" name="hora">
-                <label for="rb3">9:30 pm / 11:30 pm</label>
-            </div>
-            <div id="email" class="email">
-                <h1>Email:</h1>
-                <input type="email" id="email">
-            </div>
-            <div class="boton">
-                <input type="submit" class="boton" value="Reservar cupo">
-            </div>
-        </form>
+  <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#redes-sociales">Nuestras Redes</a>
+            <a href="menu-ingreso.html">Ingresar</a>
+        </nav>
+        <div class="encabezado">
+            <h1>Inscripción a Charlas</h1>
+        </div>
+    </header>
+
+  <main>
+    <div class="form-container">
+      <form class="loginForm" onsubmit="return validarFormulario(event)">
+        <div class="form-section">
+          <h2>Charlas</h2>
+          <label><input type="checkbox" name="charlas" value="historia" /> Historia de la Robótica</label>
+          <label><input type="checkbox" name="charlas" value="herramientas" /> Nuevas Herramientas</label>
+          <label><input type="checkbox" name="charlas" value="salud" /> Robótica y el Mundo de la Salud</label>
+          <label><input type="checkbox" name="charlas" value="empresas" /> Robótica y Nuevas Empresas</label>
+          <label><input type="checkbox" name="charlas" value="laboral" /> Mundo Laboral</label>
+        </div>
+
+        <div class="form-section">
+          <h2>Fecha</h2>
+          <label><input type="radio" name="fecha" value="lunes" /> Lunes</label>
+          <label><input type="radio" name="fecha" value="martes" /> Martes</label>
+          <label><input type="radio" name="fecha" value="miercoles" /> Miércoles</label>
+          <label><input type="radio" name="fecha" value="jueves" /> Jueves</label>
+          <label><input type="radio" name="fecha" value="viernes" /> Viernes</label>
+        </div>
+
+        <div class="form-section">
+          <h2>Hora</h2>
+          <label><input type="radio" name="hora" value="manana" /> 9:00 a 11:00</label>
+          <label><input type="radio" name="hora" value="tarde" /> 13:00 a 15:00</label>
+          <label><input type="radio" name="hora" value="noche" /> 21:30 a 23:30</label>
+        </div>
+
+        <div class="form-section">
+          <h2>Email</h2>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+        <div class="form-section">
+          <input type="submit" value="Reservar cupo" class="submit-btn" />
+        </div>
+      </form>
     </div>
+  </main>
+
+  <footer>
+        <div class="grupo1">
+            <div class="col-4">
+                <h1>Robotikschule | ARG</h1>
+            </div>
+            <div class="col-4">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>En Robotikschule, estamos comprometidos en proporcionarte las mejores oportunidades de aprendizaje en
+                    el emocionante mundo de la robótica. Nos encontramos en Av. Corrientes 2235.</p>
+                <p>Si estás interesado en inscribirte en nuestra escuela, cursos o deseas obtener más información sobre
+                    nuestros programas, te invitamos a contactarnos a través de nuestras redes sociales. Estamos aquí
+                    para responder a todas tus preguntas y ayudarte a dar el primer paso hacia un emocionante futuro en
+                    la robótica.</p>
+            </div>
+            <div class="col-4">
+                <h2>SEGUINOS</h2>
+                <div id="redes-sociales">
+                    <a href="#"> <img src="redes/facebook.png" alt="facebook"> </a>
+                    <a href="#"> <img src="redes/instagram.png" alt="instagram"> </a>
+                    <a href="#"> <img src="redes/twitter.png" alt="twitter"> </a>
+                    <a href="#"> <img src="redes/gmail.png" alt="gmail"> </a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo2">
+            <p><small>©2023 <b>Robotikschule</b> - Facundo Torres - 46586347</small></p>
+        </div>
+    </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav").classList.toggle("active");
+    }
+
+    function validarFormulario(event) {
+      event.preventDefault();
+
+      const charlas = document.querySelectorAll('input[name="charlas"]:checked');
+      const fecha = document.querySelector('input[name="fecha"]:checked');
+      const hora = document.querySelector('input[name="hora"]:checked');
+      const email = document.getElementById("email").value;
+
+      if (charlas.length === 0 || !fecha || !hora || email.trim() === "") {
+        alert("Por favor completá todos los campos del formulario.");
+        return false;
+      }
+
+      alert("Asistencia reservada correctamente.");
+      event.target.submit();
+    }
+  </script>
 </body>
 
 </html>

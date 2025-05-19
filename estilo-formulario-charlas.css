@@ -1,71 +1,190 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;500&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
-body{
-    background-image: url(form/fondo-form.png);
+
+body {
+    background-color: #F8F6F4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, a {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.encabezado {
+    background-image: url(form/robot-formulario.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F8F6F4;
 }
-.box{
+
+.encabezado h1 {
+    font-size: calc(15px + 2vw);
+}
+
+header {
+    background-color: #C4DFDF;
+    text-align: center;
+
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    color: #609EA2;
+    margin: 30px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: calc(10px + 0.5vw);
+}
+
+nav a:hover {
+    background-color: #000;
+    color: #F8F6F4;
+}
+
+main{
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.box {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
-    padding-top: 40px;
-    margin: 10px;
-}
-.loginForm{
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    padding: 0 15px 20px 15px;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 15px;
-}
-.loginForm input, label{
-    display: flex;
-    flex-direction: row;
-}
-label{
-    margin-left: 20px;
-    position: relative;
-    top: -15px;
-}
-.titulo{
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0 10px 0;
-    border-bottom: 1px solid grey;
-}
-h1{
-    font-size: calc(10px + 0,1);
-    text-align: center;
-}
-.boton{
-    text-align: center;
-    border-color: #fff;
-    border-radius: 25px;
-    font-size: 15px;
-    outline: none;
-    height: 40px;
-    width: 100%;
-    background: rgba(255,255,255,0.9);
-    cursor: pointer;
-}
-.boton:hover{
-    border-color: #000;
-    transition: .5s;
+    padding: 40px 20px;
 }
 
-.email input{
-    margin-bottom: 25px;
-    border-radius: 10px;
+.loginForm {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-.charla, .fecha, .hora, .email{
-    border-bottom: 1px solid grey;
+
+.loginForm h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.loginForm div {
+    margin-bottom: 20px;
+}
+
+.loginForm label {
+    margin-right: 10px;
+    color: #444;
+}
+
+.loginForm input[type="checkbox"],
+.loginForm input[type="radio"] {
+    margin-right: 5px;
+}
+
+.loginForm input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.loginForm .boton {
+    text-align: center;
+}
+
+.loginForm input[type="submit"] {
+    background-color: #609EA2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+}
+
+.loginForm input[type="submit"]:hover {
+    background-color: #3d6f72;
+}
+
+footer {
+    width: 100%;
+    background-color: #272829;
+    margin-top: 30px;
+}
+
+footer .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 45px 20px;
+    gap: 20px;
+}
+
+.grupo1 .col-4 h1, .grupo1 .col-4 h2 {
+    color: #E3F4F4;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.grupo1 .col-4 p {
+    color: #9bb1b1;
+    margin: 9px 0;
+    font-size: 0.9em;
+}
+
+#redes-sociales a img {
+    max-width: 50%;
+    height: auto;
+}
+
+.grupo1 #redes-sociales a {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    margin-right: 5px;
+    color: #9bb1b1;
+    background-color: #3e4042;
+    border-radius: 50%;
+}
+
+.grupo2 {
+    text-align: center;
+    color: #E3F4F4;
+    padding: 10px;
+    background-color: #1d1e1f;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 768px) {
+    .loginForm {
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
 }

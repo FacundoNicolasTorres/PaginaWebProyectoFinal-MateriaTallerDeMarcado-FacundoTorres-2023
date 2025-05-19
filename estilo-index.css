@@ -211,6 +211,7 @@ li {
 footer {
     width: 100%;
     background-color: #272829;
+    margin-top: 30px;
 }
 
 footer .grupo1 {
@@ -218,18 +219,21 @@ footer .grupo1 {
     max-width: 1200px;
     margin: auto;
     display: grid;
-    padding: 45px 0px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 45px 20px;
+    gap: 20px;
 }
 
-.grupo1 .col-4 h1,
-h2 {
+.grupo1 .col-4 h1, .grupo1 .col-4 h2 {
     color: #E3F4F4;
     margin-bottom: 20px;
+    font-size: 1.2em;
 }
 
 .grupo1 .col-4 p {
     color: #9bb1b1;
-    margin: 9px;
+    margin: 9px 0;
+    font-size: 0.9em;
 }
 
 #redes-sociales a img {
@@ -247,6 +251,7 @@ h2 {
     margin-right: 5px;
     color: #9bb1b1;
     background-color: #3e4042;
+    border-radius: 50%;
 }
 
 .grupo2 {
@@ -254,11 +259,9 @@ h2 {
     color: #E3F4F4;
     padding: 10px;
     background-color: #1d1e1f;
+    font-size: 0.9em;
 }
 
-.col-4 {
-    width: 33.33%;
-}
 
 [class*="col-"] {
     float: left;
