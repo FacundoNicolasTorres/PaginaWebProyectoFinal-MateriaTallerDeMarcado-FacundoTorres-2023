@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="estilo-formulario-charlas.css">
+    <title>CHARLAS | Robotikschule-Arg</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+</head>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        var charla = document.getElementById("charla").value;
+        var fecha = document.getElementById("fecha").value;
+        var hora = document.getElementById("hora").value;
+        var email = document.getElementById("email").value;
+        if (charla == "0" || fecha == "0" || hora == "0" || email == "") {
+            alert("Verifique los datos del formulario");
+            
+        }
+
+        alert("Asistencia reservada correctamente");
+    });
+</script>
+
+<body>
+    <div class="box">
+        <form class="loginForm">
+            <div class="titulo">
+                <h1>Anotarse a charlas</h1>
+            </div>
+            <div id="charla" class="charla">
+                <h1>Charlas:</h1>
+                <input id="cb1" type="checkbox" name="charlas">
+                <label for="cb1">Historia De La Robotica</label>
+                <input id="cb2" type="checkbox" name="charlas">
+                <label for="cb2">Nuevas Herramientas</label>
+                <input id="cb3" type="checkbox" name="charlas">
+                <label for="cb3">Historia De La Robotica</label>
+                <input id="cb4" type="checkbox" name="charlas">
+                <label for="cb4">Robotica y El Mundo De La Salud</label>
+                <input id="cb5" type="checkbox" name="charlas">
+                <label for="cb5">Robotica y Nuevas Empresas</label>
+                <input id="cb6" type="checkbox" name="charlas">
+                <label for="cb6">Mundo Laboral</label>
+            </div>
+            <div id="fecha" class="fecha">
+                <h1>Fecha:</h1>
+                <input id="rb1" type="radio" name="fecha">
+                <label for="rb1">Lunes</label>
+                <input id="rb2" type="radio" name="fecha">
+                <label for="rb2">Martes</label>
+                <input id="rb3" type="radio" name="fecha">
+                <label for="rb3">Miercoles</label>
+                <input id="rb4" type="radio" name="fecha">
+                <label for="rb4">Jueves</label>
+                <input id="rb5" type="radio" name="fecha">
+                <label for="rb5">Viernes</label>
+            </div>
+            <div id="hora" class="hora">
+                <h1>Hora:</h1>
+                <input id="rb1" type="radio" name="hora">
+                <label for="rb1">9:00 am / 11:00 am</label>
+                <input id="rb2" type="radio" name="hora">
+                <label for="rb2">13:00 pm / 2:00 pm</label>
+                <input id="rb3" type="radio" name="hora">
+                <label for="rb3">9:30 pm / 11:30 pm</label>
+            </div>
+            <div id="email" class="email">
+                <h1>Email:</h1>
+                <input type="email" id="email">
+            </div>
+            <div class="boton">
+                <input type="submit" class="boton" value="Reservar cupo">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

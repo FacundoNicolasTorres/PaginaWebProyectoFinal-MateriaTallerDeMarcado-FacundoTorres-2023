@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>AREA PERSONAL | Robotikschule-Arg</title>
+    <link rel="stylesheet" href="estilo-alumno.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+</head>
+<script type="text/javascript">
+    var urlParams = new URLSearchParams(window.location.search)
+    var username = urlParams.get("usuario")
+
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("bienvenido").textContent = "Bienvenido/a, " + username + "!"
+    })
+</script>
+
+<body>
+    <header>
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="formulario-charlas.html" target="_blank">Charlas</a>
+            <a href="#redes-sociales">Nuestras Redes</a>
+            <a href="#">Actividades</a>
+        </nav>
+        <div class="encabezado">
+            <div class="binvenida">
+                <h1 id="bienvenido"></h1>
+            </div>
+        </div>
+    </header>
+    <div class="centro">
+        <main>
+            <section>
+                <nav class="paginasMaterias">
+                    <h3>Mis Cursos:</h3>
+                    <ul>
+                        <li><a href=""><img src="alumno/tuerca-alumnos.png"> <p>Introducción a la Robótica | <small>Robotikschule</small></p></a></li>
+
+                        <li><a href=""><img src="alumno/tuerca-alumnos.png"> <p>Construcción de Robots | <small>Robotikschule</small></p></a></li>
+
+                        <li><a href=""><img src="alumno/tuerca-alumnos.png"> <p>Exploración de Sensores | <small>Robotikschule</small></p></a></li>
+
+                        <li><a href=""><img src="alumno/tuerca-alumnos.png"> <p>Desarrollo de Proyectos | <small>Robotikschule</small></p></a></li>
+
+                        <li><a href=""><img src="alumno/tuerca-alumnos.png"> <p>Diseño de Robots | <small>Robotikschule</small></p></a></li>
+                    </ul>
+                </nav>
+            </section>
+        </main>
+        <aside>
+            <div class="tablaHorarios">
+                <table class="tablaGrande">
+                    <caption>Cronograma de horarios</caption>
+                    <thead>
+                        <tr>
+                            <th>Día</th>
+                            <th>Hora</th>
+                            <th>Materia</th>
+                            <th>Docente</th>
+                            <th>Observaciones</th>
+                            <th>Cancelar clase</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>8:00 am - 9:30 am</td>
+                            <td>Introducción a la Robótica</td>
+                            <td>Rodrigo Cianciulli</td>
+                            <td>Fundamentos y conceptos básicos de robótica.</td>
+                            <td><input type="submit" class="cancelar" value="cancelar"></td>
+                        </tr>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>10:00 am - 11:30 am</td>
+                            <td>Construcción de Robots</td>
+                            <td>Carlos Torres</td>
+                            <td>Ensamblaje y mecánica de robots.</td>
+                            <td><input type="submit" class="cancelar" value="cancelar"></td>
+                        </tr>
+                        <tr>
+                            <td>Martes</td>
+                            <td>9:00 am - 10:30 am</td>
+                            <td>Exploración de Sensores</td>
+                            <td>Ana Martínez</td>
+                            <td>Uso práctico de sensores en robótica.</td>
+                            <td><input type="submit" class="cancelar" value="cancelar"></td>
+                        </tr>
+                        <tr>
+                            <td>Jueves</td>
+                            <td>9:30 am - 11:00 am</td>
+                            <td>Desarrollo de Proyectos</td>
+                            <td>Rodrigo Cianciulli</td>
+                            <td>Planificación y ejecución de proyectos robóticos.</td>
+                            <td><input type="submit" class="cancelar" value="cancelar"></td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>8:00 am - 9:30 am</td>
+                            <td>Diseño de Robots</td>
+                            <td>Rodrigo Cianciulli</td>
+                            <td>Diseño estético y funcional de robots.</td>
+                            <td><input type="submit" class="cancelar" value="cancelar"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <div class="grupo1">
+            <div class="col-4">
+                <h1>Robotikschule | ARG</h1>
+            </div>
+            <div class="col-4">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>En Robotikschule, estamos comprometidos en proporcionarte las mejores oportunidades de aprendizaje en
+                    el emocionante mundo de la robótica. Nos encontramos en Av. Corrientes 2235.</p>
+                <p>Si estás interesado en inscribirte en nuestra escuela, cursos o deseas obtener más información sobre
+                    nuestros programas, te invitamos a contactarnos a través de nuestras redes sociales. Estamos aquí
+                    para responder a todas tus preguntas y ayudarte a dar el primer paso hacia un emocionante futuro en
+                    la robótica.</p>
+            </div>
+            <div class="col-4">
+                <h2>SEGUINOS</h2>
+                <div id="redes-sociales">
+                    <a href="#"> <img src="redes/facebook.png" alt="facebook"> </a>
+                    <a href="#"> <img src="redes/instagram.png" alt="instagram"> </a>
+                    <a href="#"> <img src="redes/twitter.png" alt="twitter"> </a>
+                    <a href="#"> <img src="redes/gmail.png" alt="gmail"> </a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo2">
+            <p><small>©2023 <b>Robotikschule</b> - Facundo Torres - 46586347</small></p>
+        </div>
+    </footer>
+    <script>
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+        document.querySelector("nav").classList.toggle("active");
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;500&display=swap');
+* {
+   font-family: Raleway;
+}
+body{
+    background-image: url(menu/fondo-menu.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a,
+h1,
+h2,
+h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 0 15px 20px 15px;
+    background: rgba(14, 13, 13, 0.6);
+    border-radius: 30px;
+}
+.titulo{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid grey;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    height: 50px;
+    width: 87%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 0 0 0 35px;
+    background: rgba(255,255,255,0.3);
+    margin: 10px 0 35px 0;
+}
+.ingresar{
+    border-color: #fff;
+    border-radius: 25px;
+    font-size: 15px;
+    outline: none;
+    height: 45px;
+    width: 100%;
+    background: rgba(255,255,255,0.9);
+    cursor: pointer;
+}
+.ingresar:hover{
+    border-color: #000;
+    transition: .5s;
+}
+.abajo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    color: #fff;
+    margin-top: 10px;
+}
+.boton{
+    display: flex;
+}
+.olvidoContraseña a{
+    color: #fff;
+    text-decoration: none;
+}
+::placeholder{
+    color: #fff;
+}

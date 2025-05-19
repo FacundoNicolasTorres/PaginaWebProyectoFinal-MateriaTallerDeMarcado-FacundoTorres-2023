@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(form/fondo-form.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding-top: 40px;
+    margin: 10px;
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 0 15px 20px 15px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+}
+.loginForm input, label{
+    display: flex;
+    flex-direction: row;
+}
+label{
+    margin-left: 20px;
+    position: relative;
+    top: -15px;
+}
+.titulo{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid grey;
+}
+h1{
+    font-size: calc(10px + 0,1);
+    text-align: center;
+}
+.boton{
+    text-align: center;
+    border-color: #fff;
+    border-radius: 25px;
+    font-size: 15px;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    background: rgba(255,255,255,0.9);
+    cursor: pointer;
+}
+.boton:hover{
+    border-color: #000;
+    transition: .5s;
+}
+
+.email input{
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+.charla, .fecha, .hora, .email{
+    border-bottom: 1px solid grey;
+}
