@@ -21,7 +21,7 @@ h3 {
 
 p,
 li {
-    font-size: calc(8px + 0.5vw);
+    font-size: calc(9px + 0.5vw);
 }
 
 h3 {
@@ -86,21 +86,21 @@ main {
 aside {
     flex: 1;
     min-width: 250px;
-    text-align: start;
+    text-align: justify;
+    font-size: 7px;
     margin-top: 70px;
-    background: #f8f7f7;;
+    background: #daf0f0;
     padding: 0 15px 20px 15px;
 }
 
 aside img {
-    margin-top: 10px;
+    margin-top: 18px;
     margin-bottom: 10px;
     max-width: 100%;
     height: auto;
 }
 
-#texto-aside{
-    font-size-adjust: 6px;
+#texto-aside p{
     padding-bottom: 15px;
 }
 
@@ -132,6 +132,7 @@ aside {
 #introducción p {
     margin: 30px 20px;
     padding-right: 20px;
+    text-align: justify;
 }
 
 .negro {
@@ -139,9 +140,12 @@ aside {
 }
 
 #imagenes-carrusel {
+    padding-left: 19px;
     display: flex;
     max-width: 90%;
     height: auto;
+    justify-content: center; /*cambia la */
+    align-items: center;    /* animación*/
 }
 
 #imagenes-carrusel img {
@@ -165,9 +169,8 @@ aside {
 }
 
 #adolecentes,
-#video-robotica,
 #niños {
-    width: 33%;
+    width: 50%;
     float: left;
     display: grid;
     place-items: center;
@@ -175,10 +178,13 @@ aside {
 
 #video-robotica {
     margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #video-robotica video {
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
 }
 
@@ -189,11 +195,16 @@ li {
 
 @media only screen and (max-width: 767px) {
     #adolecentes,
-    #video-robotica,
     #niños,
     main,
     aside {
         width: 100%;
+    }
+    #video-robotica{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     #imagenes-carrusel {
         flex-direction: column;
