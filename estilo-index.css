@@ -88,8 +88,7 @@ aside {
     min-width: 250px;
     text-align: start;
     margin-top: 70px;
-    border-radius: 30px;
-    background: rgba(6, 5, 5, 0.1);
+    background: #f8f7f7;;
     padding: 0 15px 20px 15px;
 }
 
@@ -120,7 +119,7 @@ aside {
 #introducción img {
     margin-top: 10px;
     margin-right: 10px;
-    max-width: 30%;
+    max-width: 60%;
     height: auto;
     float: left;
     padding-left: 20px;
@@ -141,13 +140,12 @@ aside {
 
 #imagenes-carrusel {
     display: flex;
-    max-width: 50%;
+    max-width: 90%;
     height: auto;
-    margin-left: 25%;
 }
 
 #imagenes-carrusel img {
-    width: 0px;
+    width: 100px;
     flex-grow: 1;
     object-fit: cover;
     opacity: .8;
@@ -180,7 +178,7 @@ aside {
 }
 
 #video-robotica video {
-    max-width: 65%;
+    max-width: 50%;
     height: auto;
 }
 
