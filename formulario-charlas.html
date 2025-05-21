@@ -26,41 +26,43 @@
 
   <main>
     <div class="form-container">
-      <form class="loginForm" onsubmit="return validarFormulario(event)">
-        <div class="form-section">
-          <h2>Charlas</h2>
-          <label><input type="checkbox" name="charlas" value="historia" /> Historia de la Robótica</label>
-          <label><input type="checkbox" name="charlas" value="herramientas" /> Nuevas Herramientas</label>
-          <label><input type="checkbox" name="charlas" value="salud" /> Robótica y el Mundo de la Salud</label>
-          <label><input type="checkbox" name="charlas" value="empresas" /> Robótica y Nuevas Empresas</label>
-          <label><input type="checkbox" name="charlas" value="laboral" /> Mundo Laboral</label>
-        </div>
+      <div class="div-centrar">
+        <form class="loginForm" onsubmit="return validarFormulario(event)">
+          <div class="form-section charlas-section">
+            <h2>Charlas</h2>
+            <label><input type="checkbox" name="charlas" value="historia" /> Historia de la Robótica</label>
+            <label><input type="checkbox" name="charlas" value="herramientas" /> Nuevas Herramientas</label>
+            <label><input type="checkbox" name="charlas" value="salud" /> Robótica y el Mundo de la Salud</label>
+            <label><input type="checkbox" name="charlas" value="empresas" /> Robótica y Nuevas Empresas</label>
+            <label><input type="checkbox" name="charlas" value="laboral" /> Mundo Laboral</label>
+          </div>
 
-        <div class="form-section">
-          <h2>Fecha</h2>
-          <label><input type="radio" name="fecha" value="lunes" /> Lunes</label>
-          <label><input type="radio" name="fecha" value="martes" /> Martes</label>
-          <label><input type="radio" name="fecha" value="miercoles" /> Miércoles</label>
-          <label><input type="radio" name="fecha" value="jueves" /> Jueves</label>
-          <label><input type="radio" name="fecha" value="viernes" /> Viernes</label>
-        </div>
+          <div class="form-section">
+            <h2>Fecha</h2>
+            <label><input type="radio" name="fecha" value="lunes" /> Lunes</label>
+            <label><input type="radio" name="fecha" value="martes" /> Martes</label>
+            <label><input type="radio" name="fecha" value="miercoles" /> Miércoles</label>
+            <label><input type="radio" name="fecha" value="jueves" /> Jueves</label>
+            <label><input type="radio" name="fecha" value="viernes" /> Viernes</label>
+          </div>
 
-        <div class="form-section">
-          <h2>Hora</h2>
-          <label><input type="radio" name="hora" value="manana" /> 9:00 a 11:00</label>
-          <label><input type="radio" name="hora" value="tarde" /> 13:00 a 15:00</label>
-          <label><input type="radio" name="hora" value="noche" /> 21:30 a 23:30</label>
-        </div>
+          <div class="form-section">
+            <h2>Hora</h2>
+            <label><input type="radio" name="hora" value="manana" /> 9:00 a 11:00</label>
+            <label><input type="radio" name="hora" value="tarde" /> 13:00 a 15:00</label>
+            <label><input type="radio" name="hora" value="noche" /> 21:30 a 23:30</label>
+          </div>
 
-        <div class="form-section">
-          <h2>Email</h2>
-          <input type="email" name="email" id="email" required />
-        </div>
+          <div class="form-section">
+            <h2>Email</h2>
+            <input type="email" name="email" id="email" required />
+          </div>
 
-        <div class="form-section">
-          <input type="submit" value="Reservar cupo" class="submit-btn" />
-        </div>
-      </form>
+          <div class="form-section">
+            <input type="submit" value="Reservar cupo" class="submit-btn" />
+          </div>
+        </form>
+      </div>
     </div>
   </main>
 

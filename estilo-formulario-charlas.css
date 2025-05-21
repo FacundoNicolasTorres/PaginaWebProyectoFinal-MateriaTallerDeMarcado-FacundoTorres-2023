@@ -69,6 +69,18 @@ main{
     padding: 40px 20px;
 }
 
+.div-centrar {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    padding: 20px;
+}
+
+.charlas-section label {
+    display: block;
+    margin-bottom: 8px;
+}
+
 .loginForm {
     background-color: #ffffff;
     border: 1px solid #ccc;
