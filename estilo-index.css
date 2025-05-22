@@ -141,7 +141,7 @@ aside {
 }
 
 #imagenes-carrusel {
-    padding-left: 19px;
+    padding-left: 60px;
     display: flex;
     max-width: 90%;
     height: auto;
@@ -171,6 +171,7 @@ aside {
 
 #adolecentes,
 #niños {
+    padding-top: 10px;
     width: 50%;
     float: left;
     display: grid;
@@ -200,6 +201,8 @@ li {
     main,
     aside {
         width: 100%;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
     #video-robotica{
         width: 100%;
@@ -208,6 +211,7 @@ li {
         align-items: center;
     }
     #imagenes-carrusel {
+        padding-left: 20px;
         flex-direction: column;
         align-items: center;
     }
