@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+a,
+h1,
+h2,
+h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+p,
+li {
+    font-size: calc(10px + 0.5vw);
+}
+
+h3 {
+    font-size: calc(10px + 1vw);
+}
+
+header {
+    background-color: #C4DFDF;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+    color: #609EA2;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    color: #609EA2;
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: calc(10px + 0.5vw);
+}
+
+nav a:hover {
+    background-color: #000;
+    color: #F8F6F4;
+}
+
+nav.active {
+    display: flex;
+}
+
+.encabezado {
+    background-image: url(../img/alumno/header-fondo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ece4e4;
+}
+
+.encabezado h1 {
+    font-size: calc(15px + 2vw);
+}
+
+.centro {
+    overflow: auto;
+}
+
+.paginasMaterias {
+    text-align: center;
+}
+
+.paginasMaterias h3 {
+    margin: 25px 0 0 25px;
+}
+
+.paginasMaterias img {
+    width: 10%;
+    height: auto;
+}
+
+.paginasMaterias a {
+    border: 5px solid rgba(228, 79, 181, 0.4);
+    border-radius: 5px;
+    background-color: rgba(241, 77, 113, 0.2);
+    width: 50%;
+}
+
+aside {
+    width: 40%;
+    float: left;
+    margin-top: 50px;
+}
+
+main {
+    width: 60%;
+    float: left;
+}
+
+@media only screen and (max-width: 980px) {
+    main,
+    aside {
+        width: 100%;
+    }
+}
+
+caption {
+    background-color: rgba(218, 44, 162, 0.4);
+}
+
+.tablaHorarios {
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255, 0.4);
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 5px 20px 5px;
+}
+
+table {
+    table-layout: fixed;
+    font-size: calc(15px + 0.1vw);
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: rgb(243, 140, 210, 0.4);
+}
+
+th {
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255, 0.4);
+}
+
+tbody tr:hover {
+    background-color: rgb(243, 140, 210, 0.4);
+}
+
+td .cancelar {
+    border-radius: 25px;
+    padding: 15px;
+    cursor: pointer;
+    border-color: rgb(255, 255, 255, 0.4);
+}
+
+td .cancelar:hover {
+    border-color: rgb(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 650px) {
+    table td,
+    th {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tablaHorarios {
+        margin: 10px 0 10px 0;
+    }
+
+    table th {
+        display: none;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #272829;
+    margin-top: 30px;
+}
+
+footer .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 45px 20px;
+    gap: 20px;
+}
+
+.grupo1 .col-4 h1, .grupo1 .col-4 h2 {
+    color: #E3F4F4;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.grupo1 .col-4 p {
+    color: #9bb1b1;
+    margin: 9px 0;
+    font-size: 0.9em;
+}
+
+#redes-sociales a img {
+    max-width: 50%;
+    height: auto;
+}
+
+.grupo1 #redes-sociales a {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    margin-right: 5px;
+    color: #9bb1b1;
+    background-color: #3e4042;
+    border-radius: 50%;
+}
+
+.grupo2 {
+    text-align: center;
+    color: #E3F4F4;
+    padding: 10px;
+    background-color: #1d1e1f;
+    font-size: 0.9em;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}

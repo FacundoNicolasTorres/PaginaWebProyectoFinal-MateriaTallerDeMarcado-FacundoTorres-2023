@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E3F4F4;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+a,
+h1,
+h2,
+h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+p,
+li {
+    font-weight: Libre Franklin;
+    font-size: calc(10px + 0.5vw);
+}
+
+h3 {
+    font-size: calc(10px + 1vw);
+}
+
+.encabezado {
+    background-image: url(../img/docente/fondo-header-docente.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F8F6F4;
+}
+
+.encabezado h1 {
+    font-size: calc(15px + 2vw);
+}
+
+header {
+    background-color: #C4DFDF;
+    text-align: center;
+
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    color: #609EA2;
+    margin: 30px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: calc(10px + 0.5vw);
+}
+
+nav a:hover {
+    background-color: #000;
+    color: #F8F6F4;
+}
+
+#centro {
+    overflow: auto;
+}
+.titulo h2{
+    color: #000;
+    text-align: center;
+}
+.card{
+    border: 1px solid rgb(000, 000, 000, 0.2);
+    margin: 15px 25px 15px 25px;
+}
+
+footer {
+    width: 100%;
+    background-color: #272829;
+    margin-top: 30px;
+    overflow-x: hidden;
+}
+
+footer h1, footer h2 {
+    color: #E3F4F4;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+footer p {
+    color: #9bb1b1;
+    margin: 9px 0;
+    font-size: 0.9em;
+}
+
+#redes-sociales a img {
+    max-width: 50%;
+    height: auto;
+}
+
+#redes-sociales a {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    margin-right: 5px;
+    color: #9bb1b1;
+    background-color: #3e4042;
+    border-radius: 50%;
+}
+
+.grupo2 {
+    text-align: center;
+    color: #E3F4F4;
+    padding: 10px;
+    background-color: #1d1e1f;
+    font-size: 0.9em;
+}
+
+[class*="col-"] {
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
